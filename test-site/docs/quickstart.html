@@ -1,0 +1,170 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Mulai cepat · DocsXXI</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="Check the [README.MD](https://github.com/chlasswg26/grabutxxi) for how to install GrabutXXI."/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Mulai cepat · DocsXXI"/><meta property="og:type" content="website"/><meta property="og:url" content="https://chlasswg26.github.io/docsxxi/"/><meta property="og:description" content="Check the [README.MD](https://github.com/chlasswg26/grabutxxi) for how to install GrabutXXI."/><meta property="og:image" content="https://chlasswg26.github.io/docsxxi/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://chlasswg26.github.io/docsxxi/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/docsxxi/img/favicon.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/docsxxi/js/scrollSpy.js"></script><link rel="stylesheet" href="/docsxxi/css/main.css"/><script src="/docsxxi/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/docsxxi/"><img class="logo" src="/docsxxi/img/favicon-32x32.png" alt="DocsXXI"/><h2 class="headerTitleWithLogo">DocsXXI</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive siteNavItemActive"><a href="/docsxxi/docs/quickstart" target="_self">Quickstart</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Quickstart</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Quickstart</h3><ul class=""><li class="navListItem navListItemActive"><a class="navItem" href="/docsxxi/docs/quickstart">Docs Page</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">Mulai cepat</h1></header><article><div><span><p>Check the <a href="https://github.com/chlasswg26/grabutxxi">README.MD</a> for how to install GrabutXXI.</p>
+<h2><a class="anchor" aria-hidden="true" id="method"></a><a href="#method" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Method</h2>
+<blockquote>
+<p>Default Method : GET</p>
+</blockquote>
+<h2><a class="anchor" aria-hidden="true" id="latestphp"></a><a href="#latestphp" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>latest.php</h2>
+<blockquote>
+<p>Show Latest Movies Update</p>
+</blockquote>
+<table>
+<thead>
+<tr><th>Required</th><th>Optional</th><th>Value</th><th>Example</th><th>Description</th><th>Result</th></tr>
+</thead>
+<tbody>
+<tr><td></td><td><code>page</code></td><td><code>page</code> = Number to page <code>(1,2,3,4,5 or more)</code></td><td>Required : <a href="https://yourdomain.com/latest.php">https://yourdomain.com/latest.php</a> <br /><br /> Optional : <a href="https://yourdomain.com/latest.php?page=2">https://yourdomain.com/latest.php?page=2</a></td><td>Results returning array of json encode <br /><br /> Use <code>'code'</code> for request <strong><code>post.php</code></strong></td><td><code>isPaging</code> = Boolean (true / false) <br /> <code>next</code> = Number to next page (1,2,3,4,5 or more if available) <br /> <code>prev</code> = Number to previous page (1,2,3,4,5 or more if available) <br /><br /> <code>code</code> = String of Base64Encode <br /> <code>title</code> = String <br /> <code>image</code> = String of Image to Base64Encode (Long character)</td></tr>
+</tbody>
+</table>
+<h2><a class="anchor" aria-hidden="true" id="popularphp"></a><a href="#popularphp" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>popular.php</h2>
+<blockquote>
+<p>Show Popular Movies all the age</p>
+</blockquote>
+<table>
+<thead>
+<tr><th>Required</th><th>Optional</th><th>Value</th><th>Example</th><th>Description</th><th>Result</th></tr>
+</thead>
+<tbody>
+<tr><td></td><td></td><td></td><td>Required : <a href="https://yourdomain.com/popular.php">https://yourdomain.com/popular.php</a></td><td>Results returning array of json encode <br /><br /> Use <code>'code'</code> for request <strong><code>post.php</code></strong></td><td><code>code</code> = String of Base64Encode <br /> <code>title</code> = String <br /> <code>image</code> = String of Image to Base64Encode (Long character)</td></tr>
+</tbody>
+</table>
+<h2><a class="anchor" aria-hidden="true" id="archivephp"></a><a href="#archivephp" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>archive.php</h2>
+<blockquote>
+<p>Show Archive Movies Playlist</p>
+</blockquote>
+<table>
+<thead>
+<tr><th>Required</th><th>Optional</th><th>Value</th><th>Example</th><th>Description</th><th>Result</th></tr>
+</thead>
+<tbody>
+<tr><td></td><td></td><td></td><td>Required : <a href="https://yourdomain.com/archive.php">https://yourdomain.com/archive.php</a></td><td>Results returning array of json encode <br /><br /> Use <code>'code'</code> for request <strong><code>playlist.php</code></strong></td><td><code>code</code> = String of Base64Encode <br /> <code>image</code> = String of Image to Base64Encode (Long character)</td></tr>
+</tbody>
+</table>
+<h2><a class="anchor" aria-hidden="true" id="searchphp"></a><a href="#searchphp" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>search.php</h2>
+<blockquote>
+<p>Search Movies Update</p>
+</blockquote>
+<table>
+<thead>
+<tr><th>Required</th><th>Optional</th><th>Value</th><th>Example</th><th>Description</th><th>Result</th></tr>
+</thead>
+<tbody>
+<tr><td><code>query</code></td><td><code>page</code></td><td><code>query</code> = String to search by query <code>(superman / the lord of the rings)</code> <br /><br /> <code>page</code> = Number to page <code>(1,2,3,4,5 or more)</code></td><td>Required : <a href="https://yourdomain.com/search.php?query=batman">https://yourdomain.com/search.php?query=batman</a> <br /><br /> Optional : <a href="https://yourdomain.com/latest.php?query=batman&amp;page=2">https://yourdomain.com/latest.php?query=batman&amp;page=2</a></td><td>Results returning array of json encode <br /><br /> Use <code>'code'</code> for request <strong><code>post.php</code></strong></td><td><code>isPaging</code> = Boolean (true / false) <br /> <code>next</code> = Number to next page (1,2,3,4,5 or more if available) <br /> <code>prev</code> = Number to previous page (1,2,3,4,5 or more if available) <br /><br /> <code>code</code> = String of Base64Encode <br /> <code>title</code> = String <br /> <code>image</code> = String of Image to Base64Encode (Long character)</td></tr>
+</tbody>
+</table>
+<h2><a class="anchor" aria-hidden="true" id="playlistphp"></a><a href="#playlistphp" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>playlist.php</h2>
+<blockquote>
+<p>Show Movies Playlist</p>
+</blockquote>
+<table>
+<thead>
+<tr><th>Required</th><th>Optional</th><th>Value</th><th>Example</th><th>Description</th><th>Result</th></tr>
+</thead>
+<tbody>
+<tr><td><code>code</code></td><td></td><td><code>code</code> = String to fetch playlist data by query <code>code</code></td><td>Required : <a href="https://yourdomain.com/playlist.php?query=">https://yourdomain.com/playlist.php?query=</a><code>code</code></td><td>Results returning array of json encode <br /><br /> Use <code>'code'</code> for request <strong><code>post.php</code></strong></td><td><code>code</code> = String of Base64Encode <br /> <code>title</code> = String <br /> <code>image</code> = String of Image to Base64Encode (Long character)</td></tr>
+</tbody>
+</table>
+<h2><a class="anchor" aria-hidden="true" id="getgenrephp"></a><a href="#getgenrephp" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>getGenre.php</h2>
+<blockquote>
+<p>Show Movie Genre Codes (to bypass real genres use Base64Decode)</p>
+</blockquote>
+<table>
+<thead>
+<tr><th>Required</th><th>Optional</th><th>Value</th><th>Example</th><th>Description</th><th>Result</th></tr>
+</thead>
+<tbody>
+<tr><td></td><td></td><td></td><td>Required : <a href="https://yourdomain.com/getGenre.php">https://yourdomain.com/getGenre.php</a></td><td>Results returning array of json encode <br /><br /> Use <code>'code'</code> for request <strong><code>genre.php</code></strong></td><td><code>code</code> = String of Base64Encode</td></tr>
+</tbody>
+</table>
+<h2><a class="anchor" aria-hidden="true" id="getcountryphp"></a><a href="#getcountryphp" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>getCountry.php</h2>
+<blockquote>
+<p>Show Movie Country Codes (to bypass real countrys use Base64Decode)</p>
+</blockquote>
+<table>
+<thead>
+<tr><th>Required</th><th>Optional</th><th>Value</th><th>Example</th><th>Description</th><th>Result</th></tr>
+</thead>
+<tbody>
+<tr><td></td><td></td><td></td><td>Required : <a href="https://yourdomain.com/getCountry.php">https://yourdomain.com/getCountry.php</a></td><td>Results returning array of json encode <br /><br /> Use <code>'code'</code> for request <strong><code>country.php</code></strong></td><td><code>code</code> = String of Base64Encode</td></tr>
+</tbody>
+</table>
+<h2><a class="anchor" aria-hidden="true" id="genrephp"></a><a href="#genrephp" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>genre.php</h2>
+<blockquote>
+<p>Show Movies by Genre</p>
+</blockquote>
+<table>
+<thead>
+<tr><th>Required</th><th>Optional</th><th>Value</th><th>Example</th><th>Description</th><th>Result</th></tr>
+</thead>
+<tbody>
+<tr><td><code>query</code></td><td><code>page</code></td><td><code>query</code> = String to fetch genre by query <code>code</code> <br /><br /> <code>page</code> = Number to page <code>(1,2,3,4,5 or more)</code></td><td>Required : <a href="https://yourdomain.com/genre.php?query=">https://yourdomain.com/genre.php?query=</a><code>code</code> <br /><br /> Optional : <a href="https://yourdomain.com/genre.php?query=">https://yourdomain.com/genre.php?query=</a><code>code</code>&amp;page=2</td><td>Results returning array of json encode <br /><br /> Use <code>'code'</code> for request <strong><code>post.php</code></strong></td><td><code>isPaging</code> = Boolean (true / false) <br /> <code>next</code> = Number to next page (1,2,3,4,5 or more if available) <br /> <code>prev</code> = Number to previous page (1,2,3,4,5 or more if available) <br /><br /> <code>code</code> = String of Base64Encode <br /> <code>title</code> = String <br /> <code>image</code> = String of Image to Base64Encode (Long character)</td></tr>
+</tbody>
+</table>
+<h2><a class="anchor" aria-hidden="true" id="countryphp"></a><a href="#countryphp" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>country.php</h2>
+<blockquote>
+<p>Show Movies by Country</p>
+</blockquote>
+<table>
+<thead>
+<tr><th>Required</th><th>Optional</th><th>Value</th><th>Example</th><th>Description</th><th>Result</th></tr>
+</thead>
+<tbody>
+<tr><td><code>query</code></td><td><code>page</code></td><td><code>query</code> = String to fetch genre by query <code>code</code> <br /><br /> <code>page</code> = Number to page <code>(1,2,3,4,5 or more)</code></td><td>Required : <a href="https://yourdomain.com/country.php?query=">https://yourdomain.com/country.php?query=</a><code>code</code> <br /><br /> Optional : <a href="https://yourdomain.com/country.php?query=">https://yourdomain.com/country.php?query=</a><code>code</code>&amp;page=2</td><td>Results returning array of json encode <br /><br /> Use <code>'code'</code> for request <strong><code>post.php</code></strong></td><td><code>isPaging</code> = Boolean (true / false) <br /> <code>next</code> = Number to next page (1,2,3,4,5 or more if available) <br /> <code>prev</code> = Number to previous page (1,2,3,4,5 or more if available) <br /><br /> <code>code</code> = String of Base64Encode <br /> <code>title</code> = String <br /> <code>image</code> = String of Image to Base64Encode (Long character)</td></tr>
+</tbody>
+</table>
+</span></div></article></div><div class="docs-prevnext"></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#method">Method</a></li><li><a href="#latestphp">latest.php</a></li><li><a href="#popularphp">popular.php</a></li><li><a href="#archivephp">archive.php</a></li><li><a href="#searchphp">search.php</a></li><li><a href="#playlistphp">playlist.php</a></li><li><a href="#getgenrephp">getGenre.php</a></li><li><a href="#getcountryphp">getCountry.php</a></li><li><a href="#genrephp">genre.php</a></li><li><a href="#countryphp">country.php</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/docsxxi/" class="nav-home"><img src="/docsxxi/img/favicon-96x96.png" alt="DocsXXI" width="66" height="58"/></a><div><h5>TODO</h5></div><div><h5>TODO</h5></div><div><h5>More</h5><a href="/docsxxi/blog">Blog</a></div></section><a href="https://opensource.facebook.com/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/docsxxi/img/oss_logo.png" alt="Facebook Open Source" width="170" height="45"/></a><section class="copyright">Copyright © 2020 ChlassWG. Built with ReactJS, Powered by Docusaurus.</section></footer></div></body></html>

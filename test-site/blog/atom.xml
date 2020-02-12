@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://chlasswg26.github.io/docsxxi/blog</id>
+    <title>DocsXXI Blog</title>
+    <updated>2020-02-12T06:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://chlasswg26.github.io/docsxxi/blog"/>
+    <subtitle>The best place to stay up-to-date with the latest DocsXXI news and events.</subtitle>
+    <logo>https://chlasswg26.github.io/docsxxi/img/favicon-32x32.png</logo>
+    <rights>Copyright © 2020 ChlassWG. Built with ReactJS, Powered by Docusaurus.</rights>
+    <entry>
+        <title type="html"><![CDATA[Stable Version 1.0]]></title>
+        <id>https://chlasswg26.github.io/docsxxi/blog/2020/02/12/new-version-1.0.0.html</id>
+        <link href="https://chlasswg26.github.io/docsxxi/blog/2020/02/12/new-version-1.0.0.html"/>
+        <updated>2020-02-12T06:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p>GrabutXXI has been release on github.</p> ]]></summary>
+        <author>
+            <name>Ichlas Wardy Gustama</name>
+            <email/>
+            <uri>https://www.facebook.com/jr.woles</uri>
+        </author>
+    </entry>
+</feed>
